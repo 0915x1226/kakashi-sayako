@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Profile</title>
+
+<link rel="stylesheet" href="style.css">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600&family=Shippori+Mincho:wght@400;500&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+<section class="profile">
+
+<h1>Profile</h1>
+
+<div class="profile-tabs">
+
+<button class="tab-btn active"
+onclick="showProfile('sayako',this)">
+SAYAKO
+</button>
+
+<span>|</span>
+
+<button class="tab-btn"
+onclick="showProfile('kakashi',this)">
+KAKASHI
+</button>
+
+</div>
+
+
+
+<!-- =========================
+     SAYAKO
+========================= -->
+
+<div id="sayako" class="profile-content active">
+
+    <div class="profile-card">
+
+        <div class="profile-top">
+
+            <div class="profile-image">
+
+                <img src="images/000001.png" alt="大神サヤコ">
+
+            </div>
+
+            <div class="profile-info">
+
+                <h2>忍者登録証</h2>
+
+                <table>
+
+                    <tr><th>氏名</th><td>はたけ サヤコ</td></tr>
+
+                    <tr><th>旧姓</th><td>大神 サヤコ</td></tr>
+
+                    <tr><th>所属</th><td>木ノ葉隠れの里</td></tr>
+
+                    <tr><th>階級</th><td>元暗部／医療上忍</td></tr>
+
+                    <tr><th>忍者登録番号</th><td>012385</td></tr>
+
+                    <tr><th>誕生日</th><td>12月26日</td></tr>
+
+                    <tr><th>身長</th><td>166cm</td></tr>
+
+                    <tr><th>血液型</th><td>A型</td></tr>
+
+                    <tr><th>チャクラ性質</th><td>水・火・風</td></tr>
+
+                    <tr><th>血継限界</th><td>氷遁</td></tr>
+
+                    <tr><th>血継淘汰</th><td>霜遁</td></tr>
+
+                    <tr><th>得意</th><td>・霜遁<br>
+                        ・医療忍術<br>
+                        ・氷狼操術</td></tr>
+
+                </table>
+
+            </div>
+
+        </div>
+
+        <div class="profile-description">
+
+            <div class="profile-section">
+
+                <h3>任務実績</h3>
+
+                <table class="status-table">
+
+                    <tr><th>Dランク任務</th><td>48回</td></tr>
+
+                    <tr><th>Cランク任務</th><td>107回</td></tr>
+
+                    <tr><th>Bランク任務</th><td>348回</td></tr>
+
+                    <tr><th>Aランク任務</th><td>257回</td></tr>
+
+                    <tr><th>Sランク任務</th><td>33回</td></tr>
+
+                </table>
+
+            </div>
+
+            <div class="profile-section">
+
+                <h3>能力値</h3>
+
+                <table class="status-table">
+
+                    <tr><th>忍術</th><td>★★★★★</td></tr>
+
+                    <tr><th>体術</th><td>★★☆☆☆</td></tr>
+
+                    <tr><th>幻術</th><td>★★★☆☆</td></tr>
+
+                    <tr><th>知力</th><td>★★★★★</td></tr>
+
+                    <tr><th>力</th><td>★★☆☆☆</td></tr>
+
+                    <tr><th>速</th><td>★★★☆☆</td></tr>
+
+                    <tr><th>精</th><td>★★★★★</td></tr>
+
+                    <tr><th>印</th><td>★★★★★</td></tr>
+
+                </table>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+<!-- =========================
+     KAKASHI
+========================= -->
+
+<div id="kakashi" class="profile-content">
+
+    <div class="profile-card">
+
+        <div class="profile-top">
+
+            <div class="profile-image">
+                <img src="images/000002.png" alt="はたけカカシ">
+            </div>
+
+            <div class="profile-info">
+
+                <h2>忍者登録証</h2>
+
+                <table>
+
+                    <tr><th>氏名</th><td>はたけ カカシ</td></tr>
+
+                    <tr><th>所属</th><td>木ノ葉隠れの里</td></tr>
+
+                    <tr><th>階級</th><td>元暗部／六代目火影</td></tr>
+
+                    <tr><th>忍者登録番号</th><td>009720</td></tr>
+
+                    <tr><th>誕生日</th><td>9月15日</td></tr>
+
+                    <tr><th>身長</th><td>181cm</td></tr>
+
+                    <tr><th>血液型</th><td>O型</td></tr>
+
+                    <tr><th>チャクラ性質</th><td>雷・水・土・火・風</td></tr>
+
+                    <tr><th>得意</th><td>・雷切<br>
+                    ・紫電<br>
+                    ・口寄せ（八忍犬）</td></tr>
+
+                </table>
+
+            </div>
+
+        </div>
+
+        <div class="profile-description">
+
+            <div class="profile-section">
+
+                <h3>任務実績</h3>
+
+                <table class="status-table">
+
+                    <tr><th>Dランク任務</th><td>197回</td></tr>
+
+                    <tr><th>Cランク任務</th><td>190回</td></tr>
+
+                    <tr><th>Bランク任務</th><td>414回</td></tr>
+
+                    <tr><th>Aランク任務</th><td>298回</td></tr>
+
+                    <tr><th>Sランク任務</th><td>42回</td></tr>
+
+                </table>
+
+            </div>
+
+            <div class="profile-section">
+
+                <h3>能力値</h3>
+
+                <table class="status-table">
+
+                    <tr><th>忍術</th><td>★★★★★</td></tr>
+
+                    <tr><th>体術</th><td>★★★★☆</td></tr>
+
+                    <tr><th>幻術</th><td>★★★★☆</td></tr>
+
+                    <tr><th>知力</th><td>★★★★★</td></tr>
+
+                    <tr><th>力</th><td>★★★☆☆</td></tr>
+
+                    <tr><th>速</th><td>★★★★★</td></tr>
+
+                    <tr><th>精</th><td>★★★★★</td></tr>
+
+                    <tr><th>印</th><td>★★★★★</td></tr>
+
+                </table>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+</section>
+
+<script>
+
+function showProfile(id,button){
+
+document.querySelectorAll(".profile-content").forEach(content=>{
+
+content.classList.remove("active");
+
+});
+
+document.querySelectorAll(".tab-btn").forEach(btn=>{
+
+btn.classList.remove("active");
+
+});
+
+document.getElementById(id).classList.add("active");
+
+button.classList.add("active");
+
+}
+
+</script>
+
+</body>
+
+</html>
