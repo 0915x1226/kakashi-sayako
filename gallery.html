@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Gallery</title>
+
+<link rel="stylesheet" href="style.css">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600&family=Shippori+Mincho:wght@400;500&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+<section class="gallery">
+
+<a href="index.html" class="back">← Home</a>
+
+<h1>Gallery</h1>
+
+<div class="line"></div>
+
+<p class="gallery-text">
+
+あなたとの人生
+
+</p>
+
+<div class="gallery-grid">
+
+<img src="images/000.png" alt="">
+<img src="images/00000.png" alt="">
+<img src="images/3.png" alt="">
+<img src="images/新規キャンバス000.png" alt="">
+<img src="images/新規.png" alt="">
+
+</div>
+
+</section>
+
+<div class="lightbox" id="lightbox">
+
+    <span class="close">&times;</span>
+
+    <img id="lightbox-img">
+
+</div>
+
+<script>
+
+const images = document.querySelectorAll(".gallery-grid img");
+const lightbox = document.getElementById("lightbox");
+const lightboxImg = document.getElementById("lightbox-img");
+const closeBtn = document.querySelector(".close");
+
+images.forEach(img => {
+
+    img.addEventListener("click", () => {
+
+        lightbox.style.display = "flex";
+        lightboxImg.src = img.src;
+
+    });
+
+});
+
+closeBtn.onclick = () => {
+
+    lightbox.style.display = "none";
+
+}
+
+lightbox.onclick = (e) => {
+
+    if(e.target === lightbox){
+
+        lightbox.style.display = "none";
+
+    }
+
+}
+
+</script>
+
+</body>
+
+</html>
