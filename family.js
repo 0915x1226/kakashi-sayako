@@ -1,49 +1,52 @@
-const members = document.querySelectorAll(".member");
-const modals = document.querySelectorAll(".modal");
-const closes = document.querySelectorAll(".close");
+/*=========================
+ タブ切り替え
+=========================*/
 
-members.forEach(member => {
+const tabs = document.querySelectorAll(".tab-btn");
+const contents = document.querySelectorAll(".tab-content");
 
-    member.addEventListener("click", () => {
+tabs.forEach(tab => {
 
-        const id = member.dataset.modal;
+    tab.addEventListener("click", () => {
 
-        document.getElementById(id).classList.add("active");
+        tabs.forEach(btn => btn.classList.remove("active"));
+        contents.forEach(content => content.classList.remove("active"));
 
-    });
+        tab.classList.add("active");
 
-});
-
-closes.forEach(close => {
-
-    close.addEventListener("click", () => {
-
-        close.closest(".modal").classList.remove("active");
+        document
+            .getElementById(tab.dataset.tab)
+            .classList.add("active");
 
     });
 
 });
 
-modals.forEach(modal => {
 
-    modal.addEventListener("click", e => {
+/*=========================
+ プロフィール開閉
+=========================*/
 
-        if(e.target === modal){
+const profileButtons = document.querySelectorAll(".profile-btn");
 
-            modal.classList.remove("active");
+profileButtons.forEach(button => {
+
+    button.addEventListener("click", () => {
+
+        const card = button.closest(".member-card");
+
+        card.classList.toggle("open");
+
+        if(card.classList.contains("open")){
+
+            button.textContent = "－ プロフィールを閉じる";
+
+        }else{
+
+            button.textContent = "＋ プロフィールを見る";
 
         }
 
     });
-
-});
-
-document.addEventListener("keydown", e => {
-
-    if(e.key === "Escape"){
-
-        modals.forEach(modal => modal.classList.remove("active"));
-
-    }
 
 });

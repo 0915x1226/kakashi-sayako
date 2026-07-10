@@ -1,470 +1,726 @@
 <!DOCTYPE html>
 <html lang="ja">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Family Tree</title>
 
-    <link rel="stylesheet" href="style.css">
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@400;500;600;700&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="family.css">
+
+    <title>Family</title>
 </head>
 
 <body>
 
-<header>
-
-    <div class="logo">
-        <a href="index.html">Sayaka Archive</a>
-    </div>
-
-    <nav>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="timeline.html">Timeline</a></li>
-            <li><a href="gallery.html">Gallery</a></li>
-            <li><a href="novel.html">Novel</a></li>
-            <li><a href="family.html" class="active">Family</a></li>
-        </ul>
-    </nav>
-
-</header>
-
-<main>
-
 <section class="family">
 
-    <h1>Family Tree</h1>
-
-    <p class="family-text">
-        人物カードをクリックするとプロフィールを見ることができます。
-    </p>
-
-    <div class="tree">
-
-        <!-- =========================
-             親世代
-        ========================== -->
-
-        <div class="generation parents">
-
-            <!-- 大神家 -->
-
-            <div class="family-group">
-
-                <h2>大神一族</h2>
-
-                <div class="couple">
-
-                    <div class="member" data-modal="hioga">
-
-                        <img src="images/family/noimage.webp" alt="大神ヒオガ">
-
-                        <h3>大神ヒオガ</h3>
-
-                    </div>
-
-                    <span class="heart">♥</span>
-
-                    <div class="member" data-modal="tsurara">
-
-                        <img src="images/family/noimage.webp" alt="大神ツララ">
-
-                        <h3>大神ツララ</h3>
-
-                    </div>
-
-                </div>
-
-            </div>
-
-            <!-- はたけ家 -->
-
-            <div class="family-group">
-
-                <h2>はたけ一族</h2>
-
-                <div class="couple">
-
-                    <div class="member" data-modal="sakumo">
-
-                        <img src="images/family/noimage.webp" alt="はたけサクモ">
-
-                        <h3>はたけサクモ</h3>
-
-                    </div>
-
-                    <span class="heart">♥</span>
-
-                    <div class="member" data-modal="mother">
-
-                        <img src="images/family/noimage.webp" alt="？？？">
-
-                        <h3>？？？</h3>
-
-                    </div>
-
-                </div>
-
-            </div>
-
-        </div>
-
-        <!-- 縦線 -->
-
-        <div class="parents-line"></div>
-
-        <!-- =========================
-             子世代
-        ========================== -->
-
-        <div class="generation children">
-
-            <div class="member" data-modal="sayako">
-
-                <img src="images/family/noimage.webp" alt="大神サヤコ">
-
-                <h3>大神サヤコ</h3>
-
-            </div>
-
-            <div class="marriage">
-
-                <span>♥</span>
-
-            </div>
-
-            <div class="member" data-modal="kakashi">
-
-                <img src="images/family/noimage.webp" alt="はたけカカシ">
-
-                <h3>はたけカカシ</h3>
-
-            </div>
-
-        </div>
-
-        <!-- 子世代縦線 -->
-
-        <div class="children-line"></div>
-
-        <!-- =========================
-             孫世代
-        ========================== -->
-
-        <div class="generation grandchildren">
-
-            <div class="member" data-modal="ibuki">
-
-                <img src="images/family/noimage.webp" alt="はたけイブキ">
-
-                <h3>はたけイブキ</h3>
-
-            </div>
-
-            <div class="member" data-modal="shizuku">
-
-                <img src="images/family/noimage.webp" alt="はたけシズク">
-
-                <h3>はたけシズク</h3>
-
-            </div>
-
-        </div>
+    <h1>Family</h1>
+    <p class="subtitle">一族</p>
+
+    <!-- タブ -->
+    <div class="tabs">
+
+        <button class="tab-btn active" data-tab="ogami">
+            大神一族
+        </button>
+
+        <button class="tab-btn" data-tab="hatake">
+            はたけ一族
+        </button>
 
     </div>
+
+    <!-- 大神一族 -->
+    <div class="tab-content active" id="ogami">
+
+<div class="member-card">
+
+    <h2>大神ヒオガ</h2>
+
+    <button class="profile-btn">
+        ＋ プロフィールを見る
+    </button>
+
+    <div class="profile">
+
+        <h3>人物情報</h3>
+
+        <div class="profile-grid">
+
+            <div>名前</div>
+            <div>大神ヒオガ</div>
+
+            <div>配偶者</div>
+            <div>大神ツララ</div>
+
+            <div>娘</div>
+            <div>大神サヤコ</div>
+
+            <div>所属一族</div>
+            <div>大神一族</div>
+
+            <div>誕生日</div>
+            <div>1月10日</div>
+
+            <div>身長</div>
+            <div>180cm</div>
+
+            <div>血液型</div>
+            <div>O型</div>
+
+        </div>
+
+        <h3>忍情報</h3>
+
+        <div class="profile-grid">
+
+            <div>所属</div>
+            <div>霧隠れの里</div>
+
+            <div>階級</div>
+            <div>上忍</div>
+
+            <div>属性</div>
+            <div>水・土</div>
+
+        </div>
+
+        <h3>能力</h3>
+
+        <div class="profile-grid">
+
+            <div>氷狼操術</div>
+            <div>－</div>
+        
+        </div>
+
+        <h3>人物紹介</h3>
+
+        <p>
+            霧隠れの里に古くから存在する<br>
+            氷狼（ひょうろう）を育て<br>
+            共に生活や任務をこなす<br>
+            大神一族の生まれ<br><br>
+            木ノ葉隠れの里の犬塚家とも<br>
+            古くから深い関わりがある<br>
+            ある任務で深手を負い<br>
+            命が危なかった時に<br>
+            医療上忍として派遣された<br>
+            母：ツララに命を救われ<br>
+            母の血継限界・血継淘汰を<br>
+            知っていながら結婚した<br>
+        </p>
+
+    </div>
+
+</div>
+
+<div class="member-card">
+
+    <h2>大神ツララ</h2>
+
+    <button class="profile-btn">
+        ＋ プロフィールを見る
+    </button>
+
+    <div class="profile">
+
+        <h3>人物情報</h3>
+
+        <div class="profile-grid">
+
+            <div>名前</div>
+            <div>大神ツララ</div>
+
+            <div>旧姓</div>
+            <div>薄氷（うすらい）</div>
+
+            <div>配偶者</div>
+            <div>大神ヒオガ</div>
+
+            <div>娘</div>
+            <div>大神サヤコ</div>
+
+            <div>所属一族</div>
+            <div>大神一族</div>
+
+            <div>誕生日</div>
+            <div>2月6日</div>
+
+            <div>身長</div>
+            <div>164cm</div>
+
+            <div>血液型</div>
+            <div>A型</div>
+
+        </div>
+
+        <h3>忍情報</h3>
+
+        <div class="profile-grid">
+
+            <div>所属</div>
+            <div>霧隠れの里</div>
+
+            <div>階級</div>
+            <div>医療上忍</div>
+
+            <div>属性</div>
+            <div>水・風・火</div>
+
+        </div>
+
+        <h3>能力</h3>
+
+        <div class="profile-grid">
+
+            <div>血継限界</div>
+            <div>氷遁</div>
+
+            <div>血継淘汰</div>
+            <div>霜遁</div>
+
+            <div>医療忍術</div>
+            <div>－</div>
+        
+        </div>
+
+        <h3>人物紹介</h3>
+
+        <p>
+            血継限界の氷遁を持つ一族の生まれ<br><br>
+            生まれながらにして超繊細な<br>
+            チャクラコントロールを得意とし<br>
+            氷遁（水＋風）に<br>
+            火遁の属性を加えて発動する<br>
+            霜遁《そうとん》の血継淘汰は<br>
+            祖母から母へ伝授された<br><br>
+            医療忍術にも長けていたため<br>
+            霧隠れでは医療上忍として<br>
+            血継限界・血継淘汰のことは<br>
+            隠して活躍しており<br>
+            木ノ葉隠れの伝説の三忍と<br>
+            呼ばれるうちのひとりである<br>
+            綱手姫にも一目置かれる存在だった<br>
+        </p>
+
+    </div>
+
+</div>
+
+<div class="member-card">
+
+    <h2>大神サヤコ</h2>
+
+    <button class="profile-btn">
+        ＋ プロフィールを見る
+    </button>
+
+    <div class="profile">
+
+        <h3>人物情報</h3>
+
+        <div class="profile-grid">
+
+            <div>名前</div>
+            <div>大神サヤコ</div>
+
+            <div>続柄</div>
+            <div>娘</div>
+
+            <div>配偶者</div>
+            <div>はたけカカシ</div>
+
+            <div>所属一族</div>
+            <div>大神一族</div>
+
+            <div>誕生日</div>
+            <div>12月26日</div>
+
+            <div>身長</div>
+            <div>166cm</div>
+
+            <div>血液型</div>
+            <div>A型</div>
+
+        </div>
+
+        <h3>忍情報</h3>
+
+        <div class="profile-grid">
+
+            <div>所属</div>
+            <div>木ノ葉隠れの里</div>
+
+            <div>階級</div>
+            <div>医療上忍</div>
+
+            <div>属性</div>
+            <div>水・風・火</div>
+
+        </div>
+
+        <h3>能力</h3>
+
+        <div class="profile-grid">
+
+            <div>血継限界</div>
+            <div>氷遁</div>
+
+            <div>血継淘汰</div>
+            <div>霜遁</div>
+
+            <div>氷狼操術</div>
+            <div>ヒョウ・セツ</div>
+
+            <div>医療忍術</div>
+            <div>－</div>
+
+        </div>
+
+        <h3>人物紹介</h3>
+
+        <p>
+            血継限界：氷遁（水＋風）<br>
+            血継淘汰：霜遁（水＋火＋風）<br>
+            水遁を火遁で蒸発させ<br>
+            蒸発した空気を一瞬で<br>
+            風遁で凍らせて発動するため<br>
+            超緻密なチャクラ<br>
+            コントロールが必要となる<br><br>
+            氷遁を血継限界に持つ<br>
+            一族の中でも<br>
+            血継淘汰の霜遁まで<br>
+            扱える者は数多くない<br><br>
+            元々範囲攻撃・範囲支援などの<br>
+            サポートに特化した<br>
+            血継淘汰であり<br>
+            傷口に霜で出来た<br>
+            包帯を巻いたり<br>
+            患部を直接冷やすなど<br>
+            止血等の医療忍術にも<br>
+            使うことが出来る<br>
+            また氷で超極細の針を作り出し<br>
+            霜で出来た特製の糸を<br>
+            使って縫合もできる<br><br>
+            母からの遺伝と影響もあり<br>
+            小さい頃から秘密裏に<br>
+            霜遁も医療忍術も学んできたため<br>
+            かなり高レベルと言える<br>
+        </p>
+
+    </div>
+
+</div>
+
+</div>
+
+    <!-- はたけ一族 -->
+    <div class="tab-content" id="hatake">
+
+<div class="member-card">
+
+    <h2>はたけサクモ</h2>
+
+    <button class="profile-btn">
+        ＋ プロフィールを見る
+    </button>
+
+    <div class="profile">
+
+        <h3>人物情報</h3>
+
+        <div class="profile-grid">
+
+            <div>名前</div>
+            <div>はたけサクモ</div>
+
+            <div>息子</div>
+            <div>はたけカカシ</div>
+
+            <div>所属一族</div>
+            <div>はたけ一族</div>
+
+            <div>誕生日</div>
+            <div>9月3日</div>
+
+            <div>身長</div>
+            <div>181cm</div>
+
+            <div>血液型</div>
+            <div>O型</div>
+
+        </div>
+
+        <h3>忍情報</h3>
+
+        <div class="profile-grid">
+
+            <div>所属</div>
+            <div>木ノ葉隠れの里</div>
+
+            <div>別名</div>
+            <div>木ノ葉の白い牙</div>
+
+            <div>階級</div>
+            <div>上忍</div>
+
+        </div>
+
+        <h3>人物紹介</h3>
+
+        <p>
+            「木ノ葉の白い牙」と呼ばれ<br>
+            他里からも恐れられた<br>
+            エリート忍者<br><br>
+            おおらかで仲間想い<br><br>
+            とある任務で仲間を優先し<br>
+            任務を中断したことで<br>
+            助けた仲間からも<br>
+            誹謗中傷を受け<br>
+            それを苦に自死した<br>
+        </p>
+
+    </div>
+
+</div>
+
+<div class="member-card">
+
+    <h2>はたけカカシ</h2>
+
+    <button class="profile-btn">
+        ＋ プロフィールを見る
+    </button>
+
+    <div class="profile">
+
+        <h3>人物情報</h3>
+
+        <div class="profile-grid">
+
+            <div>名前</div>
+            <div>はたけカカシ</div>
+
+            <div>続柄</div>
+            <div>息子</div>
+
+            <div>配偶者</div>
+            <div>はたけサヤコ</div>
+
+            <div>息子</div>
+            <div>はたけイブキ</div>
+
+            <div>娘</div>
+            <div>はたけシズク</div>
+
+            <div>所属一族</div>
+            <div>はたけ一族</div>
+
+            <div>誕生日</div>
+            <div>9月15日</div>
+
+            <div>身長</div>
+            <div>181cm</div>
+
+            <div>血液型</div>
+            <div>O型</div>
+
+        </div>
+
+        <h3>忍情報</h3>
+
+        <div class="profile-grid">
+
+            <div>所属</div>
+            <div>木ノ葉隠れの里</div>
+
+            <div>階級</div>
+            <div>六代目火影</div>
+
+            <div>属性</div>
+            <div>雷・土・水・風・火</div>
+
+        </div>
+
+        <h3>能力</h3>
+
+        <div class="profile-grid">
+
+            <div>瞳力</div>
+            <div>写輪眼（左眼）</div>
+
+            <div>口寄せ</div>
+            <div>八忍犬</div>
+        
+        </div>
+
+        <h3>人物紹介</h3>
+
+        <p>
+            「木ノ葉の白い牙」と呼ばれた<br>
+            はたけサクモを父に持つ<br>
+            母は物心つくまえに逝去しており<br>
+            サクモの男手ひとつで<br>
+            育てられた<br><br>
+            父譲りの優秀さで<br>
+            異例のはやさで中忍まで<br>
+            昇り詰めるが<br>
+            ７歳のときに自宅で<br>
+            自死している父を発見<br><br>
+            それから「忍としての規律」を<br>
+            守ることに固執し始める<br><br>
+        </p>
+
+    </div>
+
+</div>
+
+<div class="member-card">
+
+    <h2>はたけサヤコ</h2>
+
+    <button class="profile-btn">
+        ＋ プロフィールを見る
+    </button>
+
+    <div class="profile">
+
+        <h3>人物情報</h3>
+
+        <div class="profile-grid">
+
+            <div>名前</div>
+            <div>はたけサヤコ</div>
+
+            <div>旧姓</div>
+            <div>大神（おおがみ）</div>
+
+            <div>配偶者</div>
+            <div>はたけカカシ</div>
+
+            <div>息子</div>
+            <div>はたけイブキ</div>
+
+            <div>娘</div>
+            <div>はたけシズク</div>
+
+            <div>所属一族</div>
+            <div>はたけ一族</div>
+
+            <div>誕生日</div>
+            <div>12月26日</div>
+
+            <div>身長</div>
+            <div>166cm</div>
+
+            <div>血液型</div>
+            <div>A型</div>
+
+        </div>
+　　</div>
+</div>
+
+<div class="member-card">
+
+    <h2>はたけイブキ</h2>
+
+    <button class="profile-btn">
+        ＋ プロフィールを見る
+    </button>
+
+    <div class="profile">
+
+        <h3>人物情報</h3>
+
+        <div class="profile-grid">
+
+            <div>名前</div>
+            <div>はたけイブキ</div>
+
+            <div>父</div>
+            <div>はたけカカシ</div>
+
+            <div>母</div>
+            <div>はたけサヤコ</div>
+
+            <div>妹</div>
+            <div>はたけシズク</div>
+            
+            <div>所属一族</div>
+            <div>はたけ一族</div>
+
+            <div>誕生日</div>
+            <div>4月4日</div>
+
+            <div>身長</div>
+            <div>183cm</div>
+
+            <div>血液型</div>
+            <div>A型</div>
+
+        </div>
+
+        <h3>忍情報</h3>
+
+        <div class="profile-grid">
+
+            <div>所属</div>
+            <div>木ノ葉隠れの里</div>
+
+            <div>属性</div>
+            <div>雷・水・風・火</div>
+
+        </div>
+
+        <h3>能力</h3>
+
+        <div class="profile-grid">
+
+            <div>血継限界</div>
+            <div>氷遁</div>
+
+            <div>血継淘汰</div>
+            <div>霜遁</div>
+
+            <div>雷遁</div>
+            <div>雷狼牙（双剣／剣）</div>
+        
+        </div>
+
+        <h3>人物紹介</h3>
+
+        <p>
+            はたけカカシ・はたけサヤコを<br>
+            両親に持つ<br><br>
+            父譲りの雷遁を主軸に<br>
+            母譲りの霜遁も<br>
+            受け継いでいるが<br>
+            妹のシズクよりは色濃くない<br><br>
+            母に似て<br>
+            チャクラコントロールは得意とし<br>
+            雷遁と霜遁を掛け合わせて<br>
+            形状変化させ<br>
+            霜遁・霜狼牙（そうろうが）という<br>
+            剣（大剣にも双剣にもなる）を<br>
+            生成して戦う<br><br>
+            きびきびとしているタイプで<br>
+            仲間思い<br><br>
+            任務のときは氷狼のセツと<br>
+            共に行動することが多い<br><br>
+            妹のシズクとは２歳差で仲は良い<br>
+        </p>
+
+    </div>
+
+</div>
+
+<div class="member-card">
+
+    <h2>はたけシズク</h2>
+
+    <button class="profile-btn">
+        ＋ プロフィールを見る
+    </button>
+
+    <div class="profile">
+
+        <h3>人物情報</h3>
+
+        <div class="profile-grid">
+
+            <div>名前</div>
+            <div>はたけシズク</div>
+
+            <div>父</div>
+            <div>はたけカカシ</div>
+
+            <div>母</div>
+            <div>はたけサヤコ</div>
+
+            <div>兄</div>
+            <div>はたけイブキ</div>
+            
+            <div>所属一族</div>
+            <div>はたけ一族</div>
+
+            <div>誕生日</div>
+            <div>6月6日</div>
+
+            <div>身長</div>
+            <div>167cm</div>
+
+            <div>血液型</div>
+            <div>O型</div>
+
+        </div>
+
+        <h3>忍情報</h3>
+
+        <div class="profile-grid">
+
+            <div>所属</div>
+            <div>木ノ葉隠れの里</div>
+
+            <div>属性</div>
+            <div>土・水・風・火</div>
+
+        </div>
+
+        <h3>能力</h3>
+
+        <div class="profile-grid">
+
+            <div>血継限界</div>
+            <div>氷遁</div>
+
+            <div>血継淘汰</div>
+            <div>霜遁</div>
+
+            <div>医療忍術</div>
+            <div>－</div>
+
+            <div>霜遁</div>
+            <div>霜狼爪（大斧）</div>
+
+            <div>霜遁</div>
+            <div>霜狼尾（鞭）</div>
+        
+        </div>
+
+        <h3>人物紹介</h3>
+
+        <p>
+            はたけカカシ・はたけサヤコを<br>
+            両親に持つ<br><br>
+            父譲りの土遁に母譲りの霜遁を<br>
+            バランスよく受け継いでいる<br><br>
+            チャクラコントロールを得意とし<br>
+            土遁と霜遁を掛け合わせて<br>
+            形状変化させ<br>
+            霜遁・霜狼爪（そうろうそう）という<br>
+            大斧に加え<br>
+            霜遁・霜狼尾（そうろうび）という<br>
+            鞭を状況により生成して戦う<br><br>
+            父に似てのんびりとしているが<br>
+            優秀でやるときはやるタイプ<br><br>
+            医療忍術も人並み程度に使える<br><br>
+            任務のときは氷狼のヒョウと<br>
+            一緒にいることが多い<br><br>
+            兄のイブキとは２歳差で仲は良い<br>
+        </p>
+
+    </div>
+
+</div>    
+
+</div> 
 
 </section>
-
-<!-- =========================
-     モーダル
-========================== -->
-
-<div class="modal" id="hioga">
-
-    <div class="modal-content">
-
-        <button class="close">&times;</button>
-
-        <img src="images/family/noimage.webp" alt="大神ヒオガ" class="profile-image">
-
-        <h2>大神ヒオガ</h2>
-
-        <table class="profile-table">
-
-            <tr>
-                <th>名前</th>
-                <td></td>
-            </tr>
-
-            <tr>
-                <th>誕生日</th>
-                <td></td>
-            </tr>
-
-            <tr>
-                <th>身長</th>
-                <td></td>
-            </tr>
-
-            <tr>
-                <th>所属</th>
-                <td></td>
-            </tr>
-
-            <tr>
-                <th>階級</th>
-                <td></td>
-            </tr>
-
-            <tr>
-                <th>忍者登録番号</th>
-                <td></td>
-            </tr>
-
-            <tr>
-                <th>チャクラ性質</th>
-                <td></td>
-            </tr>
-
-            <tr>
-                <th>得意</th>
-                <td></td>
-            </tr>
-
-            <tr>
-                <th>性格</th>
-                <td></td>
-            </tr>
-
-            <tr>
-                <th>好きなもの</th>
-                <td></td>
-            </tr>
-
-            <tr>
-                <th>紹介文</th>
-                <td></td>
-            </tr>
-
-        </table>
-
-    </div>
-
-</div>
-
-<div class="modal" id="tsurara">
-
-    <div class="modal-content">
-
-        <button class="close">&times;</button>
-
-        <img src="images/family/noimage.webp" alt="大神ツララ" class="profile-image">
-
-        <h2>大神ツララ</h2>
-
-        <table class="profile-table">
-
-            <tr><th>名前</th><td></td></tr>
-            <tr><th>誕生日</th><td></td></tr>
-            <tr><th>身長</th><td></td></tr>
-            <tr><th>所属</th><td></td></tr>
-            <tr><th>階級</th><td></td></tr>
-            <tr><th>忍者登録番号</th><td></td></tr>
-            <tr><th>チャクラ性質</th><td></td></tr>
-            <tr><th>得意</th><td></td></tr>
-            <tr><th>性格</th><td></td></tr>
-            <tr><th>好きなもの</th><td></td></tr>
-            <tr><th>紹介文</th><td></td></tr>
-
-        </table>
-
-    </div>
-
-</div>
-
-<div class="modal" id="sakumo">
-
-    <div class="modal-content">
-
-        <button class="close">&times;</button>
-
-        <img src="images/family/noimage.webp" alt="はたけサクモ" class="profile-image">
-
-        <h2>はたけサクモ</h2>
-
-        <table class="profile-table">
-
-            <tr><th>名前</th><td></td></tr>
-            <tr><th>誕生日</th><td></td></tr>
-            <tr><th>身長</th><td></td></tr>
-            <tr><th>所属</th><td></td></tr>
-            <tr><th>階級</th><td></td></tr>
-            <tr><th>忍者登録番号</th><td></td></tr>
-            <tr><th>チャクラ性質</th><td></td></tr>
-            <tr><th>得意</th><td></td></tr>
-            <tr><th>性格</th><td></td></tr>
-            <tr><th>好きなもの</th><td></td></tr>
-            <tr><th>紹介文</th><td></td></tr>
-
-        </table>
-
-    </div>
-
-</div>
-
-<div class="modal" id="mother">
-
-    <div class="modal-content">
-
-        <button class="close">&times;</button>
-
-        <img src="images/family/noimage.webp" alt="？？？" class="profile-image">
-
-        <h2>？？？</h2>
-
-        <table class="profile-table">
-
-            <tr><th>名前</th><td></td></tr>
-            <tr><th>誕生日</th><td></td></tr>
-            <tr><th>身長</th><td></td></tr>
-            <tr><th>所属</th><td></td></tr>
-            <tr><th>階級</th><td></td></tr>
-            <tr><th>忍者登録番号</th><td></td></tr>
-            <tr><th>チャクラ性質</th><td></td></tr>
-            <tr><th>得意</th><td></td></tr>
-            <tr><th>性格</th><td></td></tr>
-            <tr><th>好きなもの</th><td></td></tr>
-            <tr><th>紹介文</th><td></td></tr>
-
-        </table>
-
-    </div>
-
-</div>
-
-<div class="modal" id="sayako">
-
-    <div class="modal-content">
-
-        <button class="close">&times;</button>
-
-        <img src="images/family/noimage.webp" alt="大神サヤコ" class="profile-image">
-
-        <h2>大神サヤコ</h2>
-
-        <table class="profile-table">
-
-            <tr><th>名前</th><td></td></tr>
-            <tr><th>誕生日</th><td></td></tr>
-            <tr><th>身長</th><td></td></tr>
-            <tr><th>所属</th><td></td></tr>
-            <tr><th>階級</th><td></td></tr>
-            <tr><th>忍者登録番号</th><td></td></tr>
-            <tr><th>チャクラ性質</th><td></td></tr>
-            <tr><th>得意</th><td></td></tr>
-            <tr><th>性格</th><td></td></tr>
-            <tr><th>好きなもの</th><td></td></tr>
-            <tr><th>紹介文</th><td></td></tr>
-
-        </table>
-
-    </div>
-
-</div>
-
-<div class="modal" id="kakashi">
-
-    <div class="modal-content">
-
-        <button class="close">&times;</button>
-
-        <img src="images/family/noimage.webp" alt="はたけカカシ" class="profile-image">
-
-        <h2>はたけカカシ</h2>
-
-        <table class="profile-table">
-
-            <tr><th>名前</th><td></td></tr>
-            <tr><th>誕生日</th><td></td></tr>
-            <tr><th>身長</th><td></td></tr>
-            <tr><th>所属</th><td></td></tr>
-            <tr><th>階級</th><td></td></tr>
-            <tr><th>忍者登録番号</th><td></td></tr>
-            <tr><th>チャクラ性質</th><td></td></tr>
-            <tr><th>得意</th><td></td></tr>
-            <tr><th>性格</th><td></td></tr>
-            <tr><th>好きなもの</th><td></td></tr>
-            <tr><th>紹介文</th><td></td></tr>
-
-        </table>
-
-    </div>
-
-</div>
-
-<div class="modal" id="ibuki">
-
-    <div class="modal-content">
-
-        <button class="close">&times;</button>
-
-        <img src="images/family/noimage.webp" alt="はたけイブキ" class="profile-image">
-
-        <h2>はたけイブキ</h2>
-
-        <table class="profile-table">
-
-            <tr><th>名前</th><td></td></tr>
-            <tr><th>誕生日</th><td></td></tr>
-            <tr><th>身長</th><td></td></tr>
-            <tr><th>所属</th><td></td></tr>
-            <tr><th>階級</th><td></td></tr>
-            <tr><th>忍者登録番号</th><td></td></tr>
-            <tr><th>チャクラ性質</th><td></td></tr>
-            <tr><th>得意</th><td></td></tr>
-            <tr><th>性格</th><td></td></tr>
-            <tr><th>好きなもの</th><td></td></tr>
-            <tr><th>紹介文</th><td></td></tr>
-
-        </table>
-
-    </div>
-
-</div>
-
-<div class="modal" id="shizuku">
-
-    <div class="modal-content">
-
-        <button class="close">&times;</button>
-
-        <img src="images/family/noimage.webp" alt="はたけシズク" class="profile-image">
-
-        <h2>はたけシズク</h2>
-
-        <table class="profile-table">
-
-            <tr><th>名前</th><td></td></tr>
-            <tr><th>誕生日</th><td></td></tr>
-            <tr><th>身長</th><td></td></tr>
-            <tr><th>所属</th><td></td></tr>
-            <tr><th>階級</th><td></td></tr>
-            <tr><th>忍者登録番号</th><td></td></tr>
-            <tr><th>チャクラ性質</th><td></td></tr>
-            <tr><th>得意</th><td></td></tr>
-            <tr><th>性格</th><td></td></tr>
-            <tr><th>好きなもの</th><td></td></tr>
-            <tr><th>紹介文</th><td></td></tr>
-
-        </table>
-
-    </div>
-
-</div>
-
-</main>
 
 <script src="family.js"></script>
 
