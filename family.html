@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Family Tree</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="family.css">
+</head>
+
+<body>
+
+<header>
+
+    <div class="logo">
+        <a href="index.html">Sayaka Archive</a>
+    </div>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="timeline.html">Timeline</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="novel.html">Novel</a></li>
+            <li><a href="family.html" class="active">Family</a></li>
+        </ul>
+    </nav>
+
+</header>
+
+<main>
+
+<section class="family">
+
+    <h1>Family Tree</h1>
+
+    <p class="family-text">
+        人物カードをクリックするとプロフィールを見ることができます。
+    </p>
+
+    <div class="tree">
+
+        <!-- =========================
+             親世代
+        ========================== -->
+
+        <div class="generation parents">
+
+            <!-- 大神家 -->
+
+            <div class="family-group">
+
+                <h2>大神一族</h2>
+
+                <div class="couple">
+
+                    <div class="member" data-modal="hioga">
+
+                        <img src="images/family/noimage.webp" alt="大神ヒオガ">
+
+                        <h3>大神ヒオガ</h3>
+
+                    </div>
+
+                    <span class="heart">♥</span>
+
+                    <div class="member" data-modal="tsurara">
+
+                        <img src="images/family/noimage.webp" alt="大神ツララ">
+
+                        <h3>大神ツララ</h3>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- はたけ家 -->
+
+            <div class="family-group">
+
+                <h2>はたけ一族</h2>
+
+                <div class="couple">
+
+                    <div class="member" data-modal="sakumo">
+
+                        <img src="images/family/noimage.webp" alt="はたけサクモ">
+
+                        <h3>はたけサクモ</h3>
+
+                    </div>
+
+                    <span class="heart">♥</span>
+
+                    <div class="member" data-modal="mother">
+
+                        <img src="images/family/noimage.webp" alt="？？？">
+
+                        <h3>？？？</h3>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- 縦線 -->
+
+        <div class="parents-line"></div>
+
+        <!-- =========================
+             子世代
+        ========================== -->
+
+        <div class="generation children">
+
+            <div class="member" data-modal="sayako">
+
+                <img src="images/family/noimage.webp" alt="大神サヤコ">
+
+                <h3>大神サヤコ</h3>
+
+            </div>
+
+            <div class="marriage">
+
+                <span>♥</span>
+
+            </div>
+
+            <div class="member" data-modal="kakashi">
+
+                <img src="images/family/noimage.webp" alt="はたけカカシ">
+
+                <h3>はたけカカシ</h3>
+
+            </div>
+
+        </div>
+
+        <!-- 子世代縦線 -->
+
+        <div class="children-line"></div>
+
+        <!-- =========================
+             孫世代
+        ========================== -->
+
+        <div class="generation grandchildren">
+
+            <div class="member" data-modal="ibuki">
+
+                <img src="images/family/noimage.webp" alt="はたけイブキ">
+
+                <h3>はたけイブキ</h3>
+
+            </div>
+
+            <div class="member" data-modal="shizuku">
+
+                <img src="images/family/noimage.webp" alt="はたけシズク">
+
+                <h3>はたけシズク</h3>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- =========================
+     モーダル
+========================== -->
+
+<div class="modal" id="hioga">
+
+    <div class="modal-content">
+
+        <button class="close">&times;</button>
+
+        <img src="images/family/noimage.webp" alt="大神ヒオガ" class="profile-image">
+
+        <h2>大神ヒオガ</h2>
+
+        <table class="profile-table">
+
+            <tr>
+                <th>名前</th>
+                <td></td>
+            </tr>
+
+            <tr>
+                <th>誕生日</th>
+                <td></td>
+            </tr>
+
+            <tr>
+                <th>身長</th>
+                <td></td>
+            </tr>
+
+            <tr>
+                <th>所属</th>
+                <td></td>
+            </tr>
+
+            <tr>
+                <th>階級</th>
+                <td></td>
+            </tr>
+
+            <tr>
+                <th>忍者登録番号</th>
+                <td></td>
+            </tr>
+
+            <tr>
+                <th>チャクラ性質</th>
+                <td></td>
+            </tr>
+
+            <tr>
+                <th>得意</th>
+                <td></td>
+            </tr>
+
+            <tr>
+                <th>性格</th>
+                <td></td>
+            </tr>
+
+            <tr>
+                <th>好きなもの</th>
+                <td></td>
+            </tr>
+
+            <tr>
+                <th>紹介文</th>
+                <td></td>
+            </tr>
+
+        </table>
+
+    </div>
+
+</div>
+
+<div class="modal" id="tsurara">
+
+    <div class="modal-content">
+
+        <button class="close">&times;</button>
+
+        <img src="images/family/noimage.webp" alt="大神ツララ" class="profile-image">
+
+        <h2>大神ツララ</h2>
+
+        <table class="profile-table">
+
+            <tr><th>名前</th><td></td></tr>
+            <tr><th>誕生日</th><td></td></tr>
+            <tr><th>身長</th><td></td></tr>
+            <tr><th>所属</th><td></td></tr>
+            <tr><th>階級</th><td></td></tr>
+            <tr><th>忍者登録番号</th><td></td></tr>
+            <tr><th>チャクラ性質</th><td></td></tr>
+            <tr><th>得意</th><td></td></tr>
+            <tr><th>性格</th><td></td></tr>
+            <tr><th>好きなもの</th><td></td></tr>
+            <tr><th>紹介文</th><td></td></tr>
+
+        </table>
+
+    </div>
+
+</div>
+
+<div class="modal" id="sakumo">
+
+    <div class="modal-content">
+
+        <button class="close">&times;</button>
+
+        <img src="images/family/noimage.webp" alt="はたけサクモ" class="profile-image">
+
+        <h2>はたけサクモ</h2>
+
+        <table class="profile-table">
+
+            <tr><th>名前</th><td></td></tr>
+            <tr><th>誕生日</th><td></td></tr>
+            <tr><th>身長</th><td></td></tr>
+            <tr><th>所属</th><td></td></tr>
+            <tr><th>階級</th><td></td></tr>
+            <tr><th>忍者登録番号</th><td></td></tr>
+            <tr><th>チャクラ性質</th><td></td></tr>
+            <tr><th>得意</th><td></td></tr>
+            <tr><th>性格</th><td></td></tr>
+            <tr><th>好きなもの</th><td></td></tr>
+            <tr><th>紹介文</th><td></td></tr>
+
+        </table>
+
+    </div>
+
+</div>
+
+<div class="modal" id="mother">
+
+    <div class="modal-content">
+
+        <button class="close">&times;</button>
+
+        <img src="images/family/noimage.webp" alt="？？？" class="profile-image">
+
+        <h2>？？？</h2>
+
+        <table class="profile-table">
+
+            <tr><th>名前</th><td></td></tr>
+            <tr><th>誕生日</th><td></td></tr>
+            <tr><th>身長</th><td></td></tr>
+            <tr><th>所属</th><td></td></tr>
+            <tr><th>階級</th><td></td></tr>
+            <tr><th>忍者登録番号</th><td></td></tr>
+            <tr><th>チャクラ性質</th><td></td></tr>
+            <tr><th>得意</th><td></td></tr>
+            <tr><th>性格</th><td></td></tr>
+            <tr><th>好きなもの</th><td></td></tr>
+            <tr><th>紹介文</th><td></td></tr>
+
+        </table>
+
+    </div>
+
+</div>
+
+<div class="modal" id="sayako">
+
+    <div class="modal-content">
+
+        <button class="close">&times;</button>
+
+        <img src="images/family/noimage.webp" alt="大神サヤコ" class="profile-image">
+
+        <h2>大神サヤコ</h2>
+
+        <table class="profile-table">
+
+            <tr><th>名前</th><td></td></tr>
+            <tr><th>誕生日</th><td></td></tr>
+            <tr><th>身長</th><td></td></tr>
+            <tr><th>所属</th><td></td></tr>
+            <tr><th>階級</th><td></td></tr>
+            <tr><th>忍者登録番号</th><td></td></tr>
+            <tr><th>チャクラ性質</th><td></td></tr>
+            <tr><th>得意</th><td></td></tr>
+            <tr><th>性格</th><td></td></tr>
+            <tr><th>好きなもの</th><td></td></tr>
+            <tr><th>紹介文</th><td></td></tr>
+
+        </table>
+
+    </div>
+
+</div>
+
+<div class="modal" id="kakashi">
+
+    <div class="modal-content">
+
+        <button class="close">&times;</button>
+
+        <img src="images/family/noimage.webp" alt="はたけカカシ" class="profile-image">
+
+        <h2>はたけカカシ</h2>
+
+        <table class="profile-table">
+
+            <tr><th>名前</th><td></td></tr>
+            <tr><th>誕生日</th><td></td></tr>
+            <tr><th>身長</th><td></td></tr>
+            <tr><th>所属</th><td></td></tr>
+            <tr><th>階級</th><td></td></tr>
+            <tr><th>忍者登録番号</th><td></td></tr>
+            <tr><th>チャクラ性質</th><td></td></tr>
+            <tr><th>得意</th><td></td></tr>
+            <tr><th>性格</th><td></td></tr>
+            <tr><th>好きなもの</th><td></td></tr>
+            <tr><th>紹介文</th><td></td></tr>
+
+        </table>
+
+    </div>
+
+</div>
+
+<div class="modal" id="ibuki">
+
+    <div class="modal-content">
+
+        <button class="close">&times;</button>
+
+        <img src="images/family/noimage.webp" alt="はたけイブキ" class="profile-image">
+
+        <h2>はたけイブキ</h2>
+
+        <table class="profile-table">
+
+            <tr><th>名前</th><td></td></tr>
+            <tr><th>誕生日</th><td></td></tr>
+            <tr><th>身長</th><td></td></tr>
+            <tr><th>所属</th><td></td></tr>
+            <tr><th>階級</th><td></td></tr>
+            <tr><th>忍者登録番号</th><td></td></tr>
+            <tr><th>チャクラ性質</th><td></td></tr>
+            <tr><th>得意</th><td></td></tr>
+            <tr><th>性格</th><td></td></tr>
+            <tr><th>好きなもの</th><td></td></tr>
+            <tr><th>紹介文</th><td></td></tr>
+
+        </table>
+
+    </div>
+
+</div>
+
+<div class="modal" id="shizuku">
+
+    <div class="modal-content">
+
+        <button class="close">&times;</button>
+
+        <img src="images/family/noimage.webp" alt="はたけシズク" class="profile-image">
+
+        <h2>はたけシズク</h2>
+
+        <table class="profile-table">
+
+            <tr><th>名前</th><td></td></tr>
+            <tr><th>誕生日</th><td></td></tr>
+            <tr><th>身長</th><td></td></tr>
+            <tr><th>所属</th><td></td></tr>
+            <tr><th>階級</th><td></td></tr>
+            <tr><th>忍者登録番号</th><td></td></tr>
+            <tr><th>チャクラ性質</th><td></td></tr>
+            <tr><th>得意</th><td></td></tr>
+            <tr><th>性格</th><td></td></tr>
+            <tr><th>好きなもの</th><td></td></tr>
+            <tr><th>紹介文</th><td></td></tr>
+
+        </table>
+
+    </div>
+
+</div>
+
+</main>
+
+<script src="family.js"></script>
+
+</body>
+</html>
