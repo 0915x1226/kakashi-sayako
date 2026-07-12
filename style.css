@@ -1770,3 +1770,50 @@ Profile Status
     cursor:pointer;
 
 }
+
+.summary{
+
+    max-height:0;
+    overflow:hidden;
+    transition:.5s;
+    margin-top:15px;
+
+}
+
+.summary.open{
+    max-height:1000px;
+}
+
+.summary p{
+
+    font-size:13px;
+    line-height:2.1;
+    letter-spacing:.05em;
+    color:#7a7a7a;
+    margin-bottom:20px;
+
+}
+
+.summary-btn{
+
+    margin-top:15px;
+    border:none;
+    background:#8ea3b5;
+    color:white;
+    padding:10px 22px;
+    border-radius:999px;
+    cursor:pointer;
+
+}
+
+.read-btn{
+
+    display:inline-block;
+    margin-top:20px;
+    padding:10px 24px;
+    background:#d7b98c;
+    color:#fff;
+    text-decoration:none;
+    border-radius:999px;
+
+}
