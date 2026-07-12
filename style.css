@@ -6,15 +6,21 @@
 
 body{
 
-background:linear-gradient(
-180deg,
-#fbfcfd 0%,
-#f3f5f8 100%
-);
+    margin:0;
+
+    background:linear-gradient(
+    180deg,
+    #fbfcfd 0%,
+    #f3f5f8 100%
+    );
+
     font-family:"Shippori Mincho", serif;
 
-
     min-height:100vh;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
 
 }
 
