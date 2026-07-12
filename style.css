@@ -13,9 +13,6 @@ background:linear-gradient(
 );
     font-family:"Shippori Mincho", serif;
 
-    display:flex;
-    justify-content:center;
-    align-items:center;
 
     min-height:100vh;
 
