@@ -1854,3 +1854,7 @@ Profile Status
     color: #b44;
     min-height: 20px;
 }
+
+#content{
+    width:100%;
+}
